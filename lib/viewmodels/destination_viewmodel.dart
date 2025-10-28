@@ -1,6 +1,7 @@
 import '../models/destination_model.dart';
 
 class DestinationViewModel {
+  // ✅ Data utama destinasi
   final List<Destination> _destinations = [
     Destination(
       image: 'assets/images/bromo.jpg',
@@ -70,7 +71,6 @@ class DestinationViewModel {
       openTime: '06.00 - 18.00',
       entryFee: 'Rp5.000',
     ),
-
     Destination(
       image: 'assets/images/kawahijen.jpg',
       title: 'Kawah Ijen',
@@ -138,6 +138,27 @@ class DestinationViewModel {
       entryFee: 'Rp60.000',
     ),
   ];
+
+  // ✅ FAVORITE SYSTEM
+  static final List<Destination> _favorites = [];
+
+  void addToFavorite(Destination dest) {
+    if (!_favorites.any((d) => d.title == dest.title)) {
+      _favorites.add(dest);
+    }
+  }
+
+  void removeFromFavorite(Destination dest) {
+    _favorites.removeWhere((d) => d.title == dest.title);
+  }
+
+  List<Destination> getFavorites() => _favorites;
+
+  bool isFavorite(Destination dest) {
+    return _favorites.any((d) => d.title == dest.title);
+  }
+
+  // ✅ GETTERS UNTUK DATA
   List<Destination> getAllDestinations() => _destinations;
 
   List<Destination> getPopularDestinations() => _destinations.take(3).toList();

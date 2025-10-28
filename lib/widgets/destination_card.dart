@@ -49,28 +49,6 @@ class DestinationCard extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              Positioned(
-                bottom: 8,
-                right: 8,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.75),
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    padding: EdgeInsets.zero,
-                    constraints: const BoxConstraints(),
-                    icon: Icon(
-                      isFavorite
-                          ? Icons.bookmark
-                          : Icons.bookmark_border_rounded,
-                      color: Colors.redAccent,
-                      size: 22,
-                    ),
-                    onPressed: onFavoriteTap,
-                  ),
-                ),
-              ),
             ],
           ),
 
