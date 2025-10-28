@@ -95,11 +95,14 @@ flutter run
 **Sistem Favorite (dummy list untuk demo)**
 
 **Informasi wisata yang menarik**
-
+---
 ## Pengembang
 **Nama:** Taufiq Luthfi Nurrohim
-**NIM:** 230605110037
-**Program Studi:** Teknik Informatika
-**Universitas:** UIN Maulana Malik Ibrahim Malang
 
+**NIM:** 230605110037
+
+**Program Studi:** Teknik Informatika
+
+**Universitas:** UIN Maulana Malik Ibrahim Malang
+---
 # "Explore Indonesia, Discover Amazing Destinations with Tripify"
