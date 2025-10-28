@@ -95,7 +95,9 @@ flutter run
 **Sistem Favorite (dummy list untuk demo)**
 
 **Informasi wisata yang menarik**
+
 ---
+
 ## Pengembang
 **Nama:** Taufiq Luthfi Nurrohim
 
@@ -104,5 +106,7 @@ flutter run
 **Program Studi:** Teknik Informatika
 
 **Universitas:** UIN Maulana Malik Ibrahim Malang
+
 ---
+
 # "Explore Indonesia, Discover Amazing Destinations with Tripify"
