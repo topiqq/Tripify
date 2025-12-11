@@ -6,13 +6,18 @@ Tujuan utama dari aplikasi ini adalah untuk membantu pengguna menemukan, menjela
 
 Aplikasi ini menampilkan daftar tempat wisata populer dan rekomendasi menarik dengan tampilan yang modern, sederhana, dan mudah digunakan.  
 Setiap destinasi dilengkapi dengan gambar, deskripsi, informasi waktu kunjungan terbaik, jam buka, dan biaya masuk.
+Data destinasi sudah terintegrasi dengan API yang diambil dari internet.
 
 ---
 
 ## Daftar Halaman dan Fungsinya
+### 1. **Login Page**
+- Halaman setelah menjalankan aplikasi akan diarahkan untuk login, bisa juga register.
+  
+---
 
-### 1. 🏠 **Home Page**
-- Halaman utama aplikasi yang menampilkan:
+### 2. **Home Page**
+- Halaman utama aplikasi setelah login yang menampilkan:
   - **Popular Destinations** → beberapa tempat wisata populer.
   - **Recommended for You** → rekomendasi wisata lainnya.
 - Menyediakan **ikon kategori** seperti:
@@ -21,11 +26,12 @@ Setiap destinasi dilengkapi dengan gambar, deskripsi, informasi waktu kunjungan 
   - 🍜 *Culinary*  
   - 🏛️ *Cultural*
 - Ketika pengguna menekan salah satu kategori, akan diarahkan ke halaman **Explore** yang sudah difilter sesuai kategori.
-- Didesain dengan **gradient background** biru dan tata letak yang clean serta responsif.
+- Didesain dengan nuansa **dark purple** dan tata letak yang clean serta responsif.
+- Bisa di refresh dengan gesture refresh
 
 ---
 
-### 2. 🔍 **Explore Page**
+### 3. **Explore Page**
 - Menampilkan seluruh daftar destinasi wisata dalam bentuk **grid dua kolom**.
 - Dilengkapi dengan **search bar fungsional** untuk mencari destinasi berdasarkan:
   - Nama destinasi  
@@ -36,7 +42,7 @@ Setiap destinasi dilengkapi dengan gambar, deskripsi, informasi waktu kunjungan 
 
 ---
 
-### 3. ❤️ **Favorite Page**
+### 4. **Favorite Page**
 - Menampilkan daftar destinasi wisata yang disukai pengguna (favorite list).
 - Setiap item berisi gambar, nama tempat, dan lokasi dalam bentuk **list vertikal**.
 - Tombol **hapus (delete)** tersedia di sisi kanan untuk menghapus destinasi dari daftar favorit.
@@ -44,7 +50,7 @@ Setiap destinasi dilengkapi dengan gambar, deskripsi, informasi waktu kunjungan 
 
 ---
 
-### 4. 📍 **Detail Page**
+### 5. **Detail Page**
 - Menampilkan informasi lengkap mengenai destinasi yang dipilih.
 - Komponen yang ditampilkan:
   - Gambar utama destinasi
@@ -57,44 +63,65 @@ Setiap destinasi dilengkapi dengan gambar, deskripsi, informasi waktu kunjungan 
 
 ---
 
-## ⚙️ Langkah Menjalankan Aplikasi
+### 6. **Profile Page**
+- Menampilkan informasi profile User, termasuk nama, email, dan password.
+- Data user bisa diubah dari halaman profile.
 
-### 1 **Persiapan Awal**
+---
+
+# 🚀 Cara Instalasi Project Tripify (Branch UAS)
+
+## 1. Persiapan Awal
+
 Pastikan sudah menginstal:
-- [Flutter SDK](https://flutter.dev/docs/get-started/install)
-- Android Studio atau VS Code (dengan plugin Flutter & Dart)
-- Emulator Android / perangkat fisik
 
-### 2 **Clone Repository**
-```bash
+* Flutter SDK
+* Android Studio atau VS Code (plugin Flutter & Dart)
+* Emulator Android atau perangkat fisik
+
+## 2. Clone Repository
+
+```
 git clone https://github.com/topiqq/tripify.git
 ```
 
-### 3 **Masuk ke Folder Project**
-```bash
+## 3. Masuk ke Folder Project
+
+```
 cd tripify
 ```
 
-### 4 **Install Dependencies**
-```bash
+## 4. Pindah ke Branch UAS
+
+```
+git checkout UAS
+```
+
+## 5. Install Dependencies
+
+```
 flutter pub get
 ```
 
-### **Jalankan Aplikasi**
-```bash
+## 6. Jalankan Aplikasi
+
+```
 flutter run
 ```
 
 ---
 
 ## Fitur Utama
+
+**Halaman Login dan Register**
+
 **Navigasi antar halaman dengan Bottom Navigation Bar**
 
 **Search filter cerdas untuk pencarian destinasi**
 
-**Sistem Favorite (dummy list untuk demo)**
+**Sistem Favorite**
 
-**Informasi wisata yang menarik**
+**Informasi wisata yang menarik dan sudah terintegrasi dengan API**
 
 ---
 
@@ -110,3 +137,6 @@ flutter run
 ---
 
 # "Explore Indonesia, Discover Amazing Destinations with Tripify"
+
+
+***Note***: *Aplikasi dalam bentuk file.apk sudah tersedia di dalam folder build/app/outputs/flutter-apk/app-release.apk*
